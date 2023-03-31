@@ -1,22 +1,19 @@
 #include <stdio.h>
 
+#include <stdio.h>
+
 typedef struct {
-    char* thank; 
-    char* you; 
-    char* igor; 
+    char* str;
     int numStudents; 
 } thankYou; 
 
-
 int main(void){
     thankYou message; 
-    message.thank = "Thank "; 
-    message.you = "you "; 
-    message.igor = "Igor!\n"; 
+    message.str = "Thank you Igor!"; 
     message.numStudents = 119; 
 
     for (int i = 0; i < message.numStudents; i++) {
-        printf("%s%s%s", message.thank, message.you, message.igor); 
+        printf("%s\n", message.str); 
     }
 
     return 0; 
